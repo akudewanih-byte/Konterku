@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jual HP – Caption Facebook</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--tx:#1a1d29;--mu:#667085;--bd:#dfe3ec;--pr:#1877f2;--ok:#12805c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111318;--card:#1b1e27;--tx:#eef0f6;--mu:#9aa1b2;--bd:#2d3240}}
+:root[data-theme="dark"]{--bg:#111318;--card:#1b1e27;--tx:#eef0f6;--mu:#9aa1b2;--bd:#2d3240}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:680px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:4px 0 14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;margin-bottom:14px}
+.card h2{font-size:15px;margin:0 0 10px}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.f{display:flex;flex-direction:column;gap:4px}
+.w{grid-column:1/-1}
+label{font-size:12px;color:var(--mu)}
+input,select,textarea{width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+textarea{min-height:230px;resize:vertical}
+button{border:0;border-radius:10px;padding:11px 14px;font:inherit;font-weight:600;cursor:pointer;background:var(--bd);color:var(--tx)}
+button.p{background:var(--pr);color:#fff}
+button.s{background:var(--ok);color:#fff}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.row>button{flex:1;min-width:130px}
+.seg{display:flex;gap:6px;margin-bottom:10px}
+.seg button{flex:1;padding:8px;font-size:13px}
+.seg{flex-wrap:wrap}.seg button{min-width:72px;padding:8px 4px}
+.seg button.on{background:var(--pr);color:#fff}
+.pick{position:relative;overflow:hidden;flex:1;min-width:130px;display:flex}.pick button{width:100%}.pick input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:0;padding:0;border:0}
+#th{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+#th img{width:64px;height:64px;object-fit:cover;border-radius:8px}
+.it{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:8px 0;border-top:1px solid var(--bd)}
+.it:first-child{border-top:0}
+.it small{color:var(--mu);display:block}
+.sold{text-decoration:line-through;opacity:.6}
+.note{font-size:12px;color:var(--mu);margin-top:8px}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#222;color:#fff;padding:10px 16px;border-radius:20px;opacity:0;transition:.25s;pointer-events:none}
+#toast.on{opacity:1}
+</style>
+</head>
+<body>
+<main>
+<h1>📱 Jual HP → Facebook</h1>
+
+<div class="card">
+<h2>1. Data HP</h2>
+<div class="g">
+<div class="f"><label>Merek</label><input id="merek" placeholder="Samsung"></div>
+<div class="f"><label>Model</label><input id="model" placeholder="Galaxy A54"></div>
+<div class="f"><label>RAM / Memori</label><input id="spek" placeholder="8/256 GB"></div>
+<div class="f"><label>Warna</label><input id="warna" placeholder="Hitam"></div>
+<div class="f"><label>Kondisi</label><select id="kondisi"><option>Baru segel</option><option selected>Second mulus</option><option>Second normal</option><option>Ada minus</option></select></div>
+<div class="f"><label>Baterai / Garansi</label><input id="batt" placeholder="Batre 92% / garansi resmi s.d. 2027"></div>
+<div class="f w"><label>Kelengkapan</label><input id="lengkap" placeholder="Fullset, dus, charger, case"></div>
+<div class="f w"><label>Minus (jika ada)</label><input id="minus" placeholder="Lecet halus di frame"></div>
+<div class="f"><label>Harga jual (Rp)</label><input id="harga" type="number" inputmode="numeric" placeholder="3500000"></div>
+<div class="f"><label>Modal (Rp) – tidak ikut caption</label><input id="modal" type="number" inputmode="numeric" placeholder="3000000"></div>
+<div class="f"><label>Lokasi (tersimpan otomatis)</label><input id="lokasi" placeholder="Bekasi"></div>
+<div class="f"><label>No. WhatsApp (tersimpan otomatis)</label><input id="wa" inputmode="tel" placeholder="08123456789"></div>
+<div class="f w"><label>Nama toko (tersimpan otomatis, dipakai mode Simple)</label><input id="toko" placeholder="KING PHONE"></div>
+<div class="f w"><label>Metode</label><select id="metode"><option>COD & kirim seluruh Indonesia</option><option>COD saja</option><option>Kirim seluruh Indonesia</option><option>Bisa tukar tambah</option></select></div>
+<div class="f w"><label>Foto (bisa banyak)</label><div class="row" style="margin-top:0"><div class="pick"><button type="button">🖼️ Pilih dari galeri</button><input id="foto" type="file" accept="image/*" multiple></div><div class="pick"><button type="button">📷 Ambil foto</button><input id="foto2" type="file" accept="image/*" capture="environment"></div></div><div id="th"></div></div>
+</div>
+</div>
+
+<div class="card">
+<h2>2. Caption</h2>
+<div class="seg" id="seg"><button data-s="santai" class="on">😎 Santai</button><button data-s="promo">🔥 Promo</button><button data-s="pro">💼 Profesional</button><button data-s="simple">⚡ Simple</button></div>
+<textarea id="cap" placeholder="Isi data di atas, caption muncul otomatis. Boleh diedit."></textarea>
+<div id="profit" class="note"></div>
+<div class="row">
+<button class="p" id="share">📘 Buka Facebook & posting</button><button id="shareHP">📤 Share lewat HP (+foto)</button>
+<button id="copy">📋 Salin caption</button>
+<button class="s" id="save">💾 Simpan</button>
+</div>
+<div class="note">Facebook tidak mengizinkan web pihak ketiga memposting otomatis ke profil pribadi. Tombol “Buka Facebook” menyalin caption dan langsung membuka Facebook Anda di tab baru: tinggal tempel di kolom status, tambahkan foto, lalu Posting. Di HP, tombol “Share lewat HP” membawa foto dan caption sekaligus.</div>
+</div>
+
+<div class="card">
+<h2>3. Stok</h2><div class="seg" id="tabs"><button data-t="ready" class="on"></button><button data-t="sold"></button></div>
+<div id="list"></div>
+<div class="note" id="stat"></div>
+</div>
+</main>
+<div id="toast"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const ids=['merek','model','spek','warna','kondisi','batt','lengkap','minus','harga','modal','lokasi','wa','metode','toko'];
+let style='santai',files=[],items=[];
+try{items=JSON.parse(localStorage.getItem('hp_items')||'[]')}catch(e){}
+const store=()=>{try{localStorage.setItem('hp_items',JSON.stringify(items))}catch(e){}};
+const rp=n=>'Rp '+Number(n||0).toLocaleString('id-ID');
+const toast=t=>{const e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),1800)};
+const val=()=>Object.fromEntries(ids.map(i=>[i,$(i).value.trim()]));
+
+function build(){
+ const d=val(),nama=[d.merek,d.model].filter(Boolean).join(' ');
+ if(!nama){$('cap').value='';return}
+ const wl=x=>{let n=(x||'').replace(/\D/g,'');if(n.startsWith('0'))n='62'+n.slice(1);else if(n.startsWith('8'))n='62'+n;return n};
+ const sp=d.spek?' '+d.spek:'',wa=wl(d.wa)?`\n💬 WhatsApp: https://wa.me/${wl(d.wa)}`:'',lok=d.lokasi?`📍 ${d.lokasi}`:'';
+ const hdr=(d.toko?[d.toko,d.lokasi].filter(Boolean).join(' ').toUpperCase()+'\n':'')+`🔥 READY UNIT ${nama.toUpperCase()} 🔥`;
+ const rows=[];
+ rows.push(`• Kondisi: ${d.kondisi}`);
+ if(d.warna)rows.push(`• Warna: ${d.warna}`);
+ if(d.batt)rows.push(`• ${d.batt}`);
+ if(d.lengkap)rows.push(`• Kelengkapan: ${d.lengkap}`);
+ rows.push(`• Minus: ${d.minus||'tidak ada, semua fungsi normal'}`);
+ const spec=rows.join('\n'),h=d.harga?rp(d.harga):'Tanya admin';
+ let t;
+ const mt=d.metode,kd=d.kondisi.toLowerCase();
+ if(style==='promo')t=`${hdr}
+
+${spec}
+
+💥 HARGA SPESIAL ${h} 💥
+✅ ${mt}
+${lok}${wa}
+
+⏰ Unit terbatas! Yang pertama chat, dia yang bawa pulang 🚀`;
+ else if(style==='pro')t=`${hdr}
+
+Unit ${kd} dan siap menemani aktivitas Anda sehari-hari.
+
+Lancar, terawat, dan nyaman dipakai. Berikut detailnya:
+${spec}
+
+💰 Harga: ${h}
+🤝 ${mt}
+${lok}${wa}
+
+Foto asli unit yang dijual. Silakan cek langsung sebelum deal. Hubungi saya, kita atur transaksinya dengan aman dan jujur 🙏`;
+ if(style==='santai'){
+ const hg=d.harga?'Rp'+Number(d.harga).toLocaleString('id-ID'):'Tanya admin',n=wl(d.wa);
+ const det=[`📱 Unit: ${nama}`];
+ if(d.spek)det.push(`💾 Memori: ${d.spek}`);
+ if(d.warna)det.push(`🎨 Warna: ${d.warna}`);
+ det.push(`✨ Kondisi: ${d.kondisi}`);
+ if(d.batt)det.push(`🔋 ${d.batt}`);
+ if(d.lengkap)det.push(`📦 Kelengkapan: ${d.lengkap}`);
+ det.push(`⚠️ Minus: ${d.minus||'Tidak ada, semua fungsi normal'}`);
+ const kon=[d.lokasi?`📍 Lokasi: ${d.lokasi}`:'',n?`💬 WhatsApp: https://wa.me/${n}`:''].filter(Boolean).join('\n');
+ t=`${hdr.replace(/🔥 | 🔥/g,'')}\n\n${det.join('\n')}\n\n💰 HARGA: ${hg}${kon?'\n\n'+kon:''}`;
+}
+if(style==='simple'){
+ let n=(d.wa||'').replace(/\D/g,'');if(n.startsWith('0'))n='62'+n.slice(1);else if(n.startsWith('8'))n='62'+n;
+ const L=[hdr];
+ if(d.spek)L.push(`💾 RAM / Storage: ${d.spek}`);
+ if(d.warna)L.push(`🎨 Warna: ${d.warna}`);
+ L.push(`✨ Kondisi: ${d.kondisi}`);
+ if(d.batt)L.push(`🔋 Baterai: ${d.batt}`);
+ if(d.lengkap)L.push(`📦 Keterangan: ${d.lengkap}`);
+ L.push(`⚠️ Minus: ${d.minus||'Tidak ada, semua fungsi normal'}`);
+ L.push(`💰 Harga: ${d.harga?rp(d.harga):'Tanya admin'}`);
+ if(d.lokasi)L.push(`📍 Lokasi: ${d.lokasi}`);
+ L.push(`💬 Minat? Chat kami untuk info lebih lanjut.`);
+ L.push(`Silakan tanya detail dan cek unit terlebih dahulu. Stok perlu dikonfirmasi sebelum transaksi.`);
+ if(n)L.push(`https://wa.me/${n}`);
+ t=L.join('\n');
+}
+$('cap').value=t.replace(/\n{3,}/g,'\n\n').trim();
+ const p=(+d.harga||0)-(+d.modal||0);
+ $('profit').textContent=d.harga&&d.modal?`Estimasi untung: ${rp(p)} (${(d.modal>0?p/d.modal*100:0).toFixed(1)}% dari modal)`:'';
+}
+ids.forEach(i=>$(i).addEventListener('input',build));
+const PF=['lokasi','wa','toko'];
+try{const pr=JSON.parse(localStorage.getItem('hp_profile')||'{}');PF.forEach(k=>{if(pr[k])$(k).value=pr[k]})}catch(e){}
+PF.forEach(k=>$(k).addEventListener('input',()=>{try{localStorage.setItem('hp_profile',JSON.stringify(Object.fromEntries(PF.map(x=>[x,$(x).value.trim()]))))}catch(e){}}));
+$('seg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;style=b.dataset.s;[...$('seg').children].forEach(x=>x.classList.toggle('on',x===b));build()});
+function addFiles(e){const n=[...e.target.files];e.target.value='';n.forEach(f=>{files.push(f);const r=new FileReader();r.onload=()=>{const i=new Image();i.src=r.result;$('th').appendChild(i)};r.readAsDataURL(f)});if(n.length)toast(files.length+' foto dipilih ✓')}
+$('foto').addEventListener('change',addFiles);$('foto2').addEventListener('change',addFiles);
+
+async function copy(){const t=$('cap').value;if(!t)return toast('Caption masih kosong'),false;
+ try{await navigator.clipboard.writeText(t)}catch(e){$('cap').select();document.execCommand('copy')}toast('Caption disalin ✓');return true}
+$('copy').onclick=copy;
+
+$('share').onclick=()=>{if(!$('cap').value)return toast('Isi data HP dulu');copy();const w=window.open('https://www.facebook.com/','_blank');if(!w)toast('Pop-up diblokir. Buka facebook.com manual, caption sudah disalin')};
+$('shareHP').onclick=async()=>{
+ const t=$('cap').value;if(!t)return toast('Isi data HP dulu');
+ await copy();
+ try{
+  if(files.length&&navigator.canShare&&navigator.canShare({files})){await navigator.share({files,text:t});return}
+  if(navigator.share){await navigator.share({text:t});return}
+ }catch(e){if(e.name==='AbortError')return}
+ window.open('https://www.facebook.com/','_blank');toast('Caption disalin, tempel di Facebook');
+};
+
+$('save').onclick=()=>{
+ const d=val();if(!d.model&&!d.merek)return toast('Isi merek/model dulu');
+ const ex=editId&&items.find(i=>i.id===editId);if(ex){Object.assign(ex,d);toast('Perubahan disimpan ✓')}else{items.unshift({...d,id:Date.now(),sold:false,tgl:new Date().toLocaleDateString('id-ID')});toast('Tersimpan ✓')}editId=null;tab='ready';store();render();
+};
+let tab='ready',editId=null;
+function render(){
+ const list=items.filter(x=>tab==='sold'?x.sold:!x.sold);
+ const nr=items.filter(x=>!x.sold).length,ns=items.length-nr,T=$('tabs').children;
+ T[0].textContent=`📦 Stok Ready (${nr})`;T[1].textContent=`✅ Terjual (${ns})`;
+ [...T].forEach(b=>b.classList.toggle('on',b.dataset.t===tab));
+ $('list').innerHTML=list.length?'':'<div class="note">Belum ada data di sini.</div>';
+ list.forEach(x=>{
+  const r=document.createElement('div');r.className='it';
+  const p=(+x.harga||0)-(+x.modal||0);
+  r.innerHTML=`<div><b>${esc(x.merek)} ${esc(x.model)}</b> ${esc(x.spek)}<small>${rp(x.harga)} · untung ${rp(p)} · ${x.sold?'terjual '+(x.tglJual||''):x.tgl}</small></div><div style="display:flex;gap:6px">${x.sold?'<button data-a="sold">↩ Ready</button>':'<button data-a="sold">✔ Laku</button><button data-a="load">✏️</button>'}<button data-a="del">🗑</button></div>`;
+  r.onclick=e=>{const b=e.target.closest('button');if(!b)return;const a=b.dataset.a;
+   if(a==='sold'){x.sold=!x.sold;x.tglJual=x.sold?new Date().toLocaleDateString('id-ID'):'';toast(x.sold?'Dipindah ke Terjual ✓':'Dikembalikan ke Stok Ready')}
+   else if(a==='del'){if(!b.dataset.c){b.dataset.c=1;b.textContent='Yakin?';setTimeout(()=>{if(b.isConnected){b.dataset.c='';b.textContent='🗑'}},3000);return}items=items.filter(i=>i!==x);toast('Data dihapus')}
+   else if(a==='load'){editId=x.id;ids.forEach(i=>$(i).value=x[i]||'');build();toast('Mode edit: ubah lalu tekan Simpan');scrollTo({top:0,behavior:'smooth'});return}
+   store();render()};
+  $('list').appendChild(r);
+ });
+ const s=items.filter(i=>i.sold),u=s.reduce((a,i)=>a+(+i.harga||0)-(+i.modal||0),0),mod=items.filter(i=>!i.sold).reduce((a,i)=>a+(+i.modal||0),0);
+ $('stat').textContent=items.length?`Modal di stok ready: ${rp(mod)} · Total untung terjual: ${rp(u)}`:'';
+}
+$('tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b){tab=b.dataset.t;render()}});
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+render();
+</script>
+</body>
+</html>
